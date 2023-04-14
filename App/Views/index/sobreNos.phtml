@@ -1,0 +1,10 @@
+<h1>Sobre Nós</h1>
+<hr>
+
+<?php
+    foreach($this->view->dados as $indice => $info){
+        echo "<h1>{$info['titulo']}</h1><br>";
+        echo "<p>{$info['descricao']}</p><hr>";
+    }
+    echo 'Chegamos ao IndexController e o action sobreNos';
+?>
